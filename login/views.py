@@ -54,11 +54,11 @@ def getInfo(request):
 
             response_dict["code"] = 20000
 
-            data_dict['username'] = username
+            data_dict['name'] = ext_user.real_name
             data_dict['avatar'] = ext_user.avatar
             data_dict['roles'] = ['admin']
             response_dict["data"] = data_dict
-            response = JsonResponse(response_dict,json_dumps_params={'ensure_ascii':False})
+            response = JsonResponse(response_dict,json_dumps_params={'ensure_ascii':False})#事实上不加也可以
             return response
 
 
