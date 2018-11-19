@@ -10,12 +10,9 @@ from . import models
 # JSON
 import json
 # Create your views here.
-
 response_dict = {}
 token_dict = {}
-
-def dict_constructer( **kwargs ):
-    return kwargs
+data_dict = {}
 
 def user_login(request):
     if request.method == "POST":
