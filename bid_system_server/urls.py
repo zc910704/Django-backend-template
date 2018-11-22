@@ -21,8 +21,9 @@ from dataapi import views as data
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/login', log.user_login),
-    path('user/info',log.getInfo),
-    path('user/logout',log.user_logout),
-    path('data/calllistinfo',data.views.CallListInfo),
-    path('data/detailinfo', data.views.DetailInfo)
+    path('user/info', log.getInfo),
+    path('user/logout', log.user_logout),
+    path('data/calllistinfo', data.callListInfo),
+    path('data/detailinfo', data.detailInfo),
+    path('data/search-call-list', data.searchCallList)
 ]

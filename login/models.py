@@ -3,24 +3,26 @@ from django.contrib.auth.models import User
 # Create your models here.
  
 class Extend_User(models.Model):
-    '''拓展默认用户'''
+    '''
+    拓展默认用户
+    '''
 
     gender = (
-        ('male','男'),
-        ('none','未知'),
-        ('female','女'),
+        ('male', '男'),
+        ('none', '未知'),
+        ('female', '女'),
     )
 
     role = (
-        ('admin','admin'),
-        ('user','user')
+        ('admin', 'admin'),
+        ('user', 'user')
     )
 
     real_name = models.CharField(max_length=128, blank=True)
     avatar = models.CharField(max_length=128, blank=True)
-    roles = models.CharField(max_length=32,choices=role,default='admin')
+    roles = models.CharField(max_length=32,choices=role, default='admin')
     user = models.OneToOneField(User,on_delete=models.CASCADE)
-    sex = models.CharField(max_length=32,choices=gender,default='未知')
+    sex = models.CharField(max_length=32, choices=gender, default='未知')
 
  
     def __str__(self):

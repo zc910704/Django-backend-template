@@ -3,26 +3,39 @@ from . import models
 from django.http import JsonResponse
 import json
 
+
 # Create your views here.
 
-def CallListInfo(request):
-  if request.methods == "GET":
-    call_list = models.CallList.objects.all()
-    return JsonResponse({'code': 20000, 'data': call_list})
-  else:
-    return JsonResponse({'code': 20001})
+def callListInfo(request):
+    if request.method == "GET":
+        call_list = models.CallList.objects.all().values('status', 'callname', 'calldate')
+        return JsonResponse({'code': 20000, 'data': list(call_list)})
+    else:
+        return JsonResponse({'code': 20001})
 
-def DetailInfo(request):
-  if request.method == "POST":
+
+def detailInfo(request):
+    if request.method == "POST":
         callname = request.POST.get('callname')
         if callname:
-          pass
+            pass
         else:
-          request_payload_obj = json.loads(request.body)
-          callname = request_payload_obj['callname']
+            request_payload_obj = json.loads(request.body)
+            callname = request_payload_obj['callname']
         try:
-          call = CallList.objects.get(callname= callname)
-          bidder = models.BidDetail.objects.filter(callfor = call)
-          return JsonResponse({'code': 20000, 'data': bidder})
+            call = models.CallList.objects.get(callname=callname)
+            bidder = models.BidDetail.objects.filter(callfor=call)
+            return JsonResponse({'code': 20000, 'data': bidder})
         except:
-          return JsonResponse({'code': 20000, 'data': []})
+            return JsonResponse({'code': 20000, 'data': []})
+
+def searchCallList(request):
+    if request.method == "POST":
+        search = request.POST.get('search')
+        if search:
+            pass
+        else:
+            request_payload_obj = json.loads(request.body)
+            search = request_payload_obj['search']
+        calllist = models.CallList.objects.all().values('status', 'callname', 'calldate')
+        return JsonResponse({'code': 20000, 'data': list(calllist)})
