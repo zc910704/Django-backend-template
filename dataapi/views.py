@@ -15,6 +15,11 @@ def callListInfo(request):
 
 
 def detailInfo(request):
+    '''
+    :param request:
+    :return:
+    :招标详情
+    '''
     if request.method == "POST":
         callname = request.POST.get('callname')
         if callname:
@@ -39,3 +44,14 @@ def searchCallList(request):
             search = request_payload_obj['search']
         calllist = models.CallList.objects.all().values('status', 'callname', 'calldate')
         return JsonResponse({'code': 20000, 'data': list(calllist)})
+
+def calldetailList(request):
+    if request.method == "POST":
+        call = request.POST.get('call')
+        if call:
+            pass
+        else:
+            request_payload_obj = json.loads(request.body)
+            call = request_payload_obj['call']
+        bidders = models.BidDetail.objects.filter(callfor__callname = call).values('biddername', 'bidderprice')
+        return JsonResponse({'code': 20000, 'data': list(bidders)})

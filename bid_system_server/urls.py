@@ -22,8 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/login', log.user_login),
     path('user/info', log.getInfo),
-    path('user/logout', log.user_logout),
     path('data/calllistinfo', data.callListInfo),
+    path('user/logout', log.user_logout),
     path('data/detailinfo', data.detailInfo),
-    path('data/search-call-list', data.searchCallList)
+    path('data/search-call-list', data.searchCallList),
+    path('data/call-detail-list', data.calldetailList)
 ]

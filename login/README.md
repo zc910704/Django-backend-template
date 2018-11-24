@@ -8,3 +8,6 @@
 https://docs.djangoproject.com/en/2.1/
 
 [model的操作](https://www.cnblogs.com/yangmv/p/5327477.html)
+
+django关联查询
+https://blog.csdn.net/javali1995/article/details/77972898
