@@ -8,7 +8,7 @@ import json
 
 def callListInfo(request):
     if request.method == "GET":
-        call_list = models.CallList.objects.all().values('status', 'callname', 'calldate')
+        call_list = models.CallList.objects.all().values('status', 'callname', 'calldate', 'winner', 'method', 'calllimit')
         return JsonResponse({'code': 20000, 'data': list(call_list)})
     else:
         return JsonResponse({'code': 20001})
@@ -42,7 +42,7 @@ def searchCallList(request):
         else:
             request_payload_obj = json.loads(request.body)
             search = request_payload_obj['search']
-        calllist = models.CallList.objects.all().values('status', 'callname', 'calldate')
+        calllist = models.CallList.objects.all().values('status', 'callname', 'calldate', 'winner', 'method', 'calllimit')
         return JsonResponse({'code': 20000, 'data': list(calllist)})
 
 def calldetailList(request):
@@ -53,5 +53,5 @@ def calldetailList(request):
         else:
             request_payload_obj = json.loads(request.body)
             call = request_payload_obj['call']
-        bidders = models.BidDetail.objects.filter(callfor__callname = call).values('biddername', 'bidderprice')
+        bidders = models.BidDetail.objects.filter(callfor__callname=call).values('biddername', 'bidderprice')
         return JsonResponse({'code': 20000, 'data': list(bidders)})
