@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.urls import include
+from django.conf.urls import include
 from login import views as log
 from dataapi import views as data
-import contractData
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +29,5 @@ urlpatterns = [
     path('data/detailinfo', data.detailInfo),
     path('data/search-call-list', data.searchCallList),
     path('data/call-detail-list', data.calldetailList),
-    path('contract', include(contractData.urls))
+    path('contract/', include('contractData.urls'))
 ]
