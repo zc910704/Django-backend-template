@@ -15,3 +15,7 @@ python manage.py shell
 
 
 ```
+## 部署
+
+1. uwsgi安装前，必须对应版本安装 libpython3.x-dev
+2. 
