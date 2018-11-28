@@ -18,4 +18,7 @@ python manage.py shell
 ## 部署
 
 1. uwsgi安装前，必须对应版本安装 libpython3.x-dev
-2. 
+2. 根据提示apt安装依赖clang gcc ngix, `pip install wheel setuptools`
+3. `pip install django-cors-headers`
+
+https://blog.csdn.net/qq_28018283/article/details/77333822 跨域问题解决

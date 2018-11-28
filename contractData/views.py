@@ -3,7 +3,7 @@ from .models import ContractPrice
 import json
 # Create your views here.
 
-
+@login_required
 def price_detail_info(request):
     """
     return the detail price of contract items that user search for

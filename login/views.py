@@ -39,7 +39,7 @@ def user_login(request):
             print(response_dict)
             return JsonResponse(response_dict)
 
-
+@login_required
 def getInfo(request):
     if request:
         username = request.GET.get('token')
@@ -61,10 +61,7 @@ def getInfo(request):
 
 def user_logout(request):
   logout(request)
-  response_dict = {}
-  response_dict['code']= 20000
-  response_dict['data']= 'success'
-  return JsonResponse(response_dict)
+  return JsonResponse({'code': 20000, 'data': 'success'})
 
 
 
