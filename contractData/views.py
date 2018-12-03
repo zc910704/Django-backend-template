@@ -2,9 +2,11 @@ from django.http import JsonResponse
 from .models import ContractPrice
 import json
 # Create your views here.
+from django.contrib.auth.decorators import login_required
 
-@login_required
+
 def price_detail_info(request):
+    print(request.user)
     """
     return the detail price of contract items that user search for
     """

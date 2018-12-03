@@ -2,9 +2,8 @@ from . import models
 from django.http import JsonResponse
 import json
 
-
 # Create your views here.
-@login_required
+
 def callListInfo(request):
     if request.method == "GET":
         call_list = models.CallList.objects.all().values('status', 'callname', 'calldate', 'winner', 'method', 'calllimit')
@@ -12,13 +11,12 @@ def callListInfo(request):
     else:
         return JsonResponse({'code': 20001})
 
-@login_required
+
 def detailInfo(request):
-    '''
+    """
     :param request:
     :return:
-    :招标详情
-    '''
+    """
     if request.method == "POST":
         callname = request.POST.get('callname')
         if callname:
@@ -33,7 +31,6 @@ def detailInfo(request):
         except:
             return JsonResponse({'code': 20000, 'data': []})
 
-@login_required
 def searchCallList(request):
     if request.method == "POST":
         search = request.POST.get('search')
@@ -45,8 +42,8 @@ def searchCallList(request):
         calllist = models.CallList.objects.all().values('status', 'callname', 'calldate', 'winner', 'method', 'calllimit')
         return JsonResponse({'code': 20000, 'data': list(calllist)})
 
-@login_required
 def calldetailList(request):
+    print(request.user)
     if request.method == "POST":
         call = request.POST.get('call')
         if call:

@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'login',
     'dataapi',
     'corsheaders',
-    'contractData'
+    'contractData',
+    'status'
 ]
 
 MIDDLEWARE = [
@@ -48,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',  # 允许跨域
     'django.middleware.common.CommonMiddleware',
-    #'django.middleware.csrf.CsrfViewMiddleware',关闭csrf
+    # 'django.middleware.csrf.CsrfViewMiddleware',关闭csrf
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -150,5 +151,10 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-#忽略路由中的斜线错误
-SLASH=False
+# 忽略路由中的斜线错误
+
+SLASH = False
+
+LOGIN_URL = '/user/login'
+
+SESSION_COOKIE_HTTPONLY = False

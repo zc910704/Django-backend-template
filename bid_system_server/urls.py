@@ -29,5 +29,6 @@ urlpatterns = [
     path('data/detailinfo', data.detailInfo),
     path('data/search-call-list', data.searchCallList),
     path('data/call-detail-list', data.calldetailList),
-    path('contract/', include('contractData.urls'))
+    path('contract/', include('contractData.urls')),
+    path('server/', include('status.urls'))
 ]
