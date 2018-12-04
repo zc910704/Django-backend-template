@@ -4,11 +4,9 @@ from django.db import models
 # Create your models here.
 
 class CallList(models.Model):
-    '''
-
+    """
     list for the call 招标列表
-
-    '''
+    """
     STATUS_CHOICES = (
         ('u', 'UpComing'),
         ('d', 'Doing'),
@@ -31,9 +29,9 @@ class CallList(models.Model):
 
 
 class BidDetail(models.Model):
-    '''
+    """
     投标人的单次投标详情
-    '''
+    """
     biddername = models.CharField('投标公司法人名称', max_length=128)
     alias = models.CharField('投标公司别名', max_length=128, blank=True)
     bidderprice = models.BigIntegerField('投标价格')
