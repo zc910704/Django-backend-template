@@ -53,3 +53,4 @@ def calldetailList(request):
             call = request_payload_obj['call']
         bidders = models.BidDetail.objects.filter(callfor__callname=call).values('biddername', 'bidderprice')
         return JsonResponse({'code': 20000, 'data': list(bidders)})
+
