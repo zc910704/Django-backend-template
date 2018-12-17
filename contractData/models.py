@@ -40,3 +40,6 @@ class ContractPrice(models.Model):
 
     def __str__(self):
         return self.item
+    
+    class Meta:
+        ordering = ['contract']
