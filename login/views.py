@@ -35,10 +35,11 @@ def getInfo(request):
         user = User.objects.get(username=username)
         if user:
             ext_user = models.Extend_User.objects.get(user=user)
+            role = ext_user.get_roles_display()
             return JsonResponse({'code': 20000,
                                  'data': {'name': ext_user.real_name,
                                           'avatar': ext_user.avatar,
-                                          'roles': ['admin']}},
+                                          'roles': [role]}},
                                 json_dumps_params={'ensure_ascii': False})  # 事实上不加也可以
         else:
             return JsonResponse({'code': 50014})
