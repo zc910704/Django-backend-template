@@ -11,7 +11,7 @@ class RecentUpdate(models.Model):
     """
     time = models.DateTimeField(verbose_name='发布时间', auto_now=True, null=True)
     title = models.CharField(verbose_name='更新标题', max_length=64, null=True)
-    content = models.CharField(verbose_name='更新内容', max_length=256, null=True)
+    content = models.TextField(verbose_name='更新内容', null=True)
 
     def __str__(self):
         return self.title
