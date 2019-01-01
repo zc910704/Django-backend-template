@@ -34,7 +34,7 @@ def price_detail_info(request):
                         'feature', 'description', 'unit', 'priceNet',
                         'priceTaxed', 'classify', 'comment')
         if len(query_set_list) == 2:
-            query_set = query_set_list[0] | query_set_list[1]
+            query_set = (query_set_list[0] | query_set_list[1]).distinct()
         else:
             query_set = query_set_list
 
